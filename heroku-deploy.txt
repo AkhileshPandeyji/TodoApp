@@ -21,4 +21,5 @@ then set mongoose.connect(process.env.MONGODB_URI || mongodb://localhost:27017/T
 12.git add .
 13.git commit -m 'message'
 14.git push
-15.heroku.logs 
+15.heroku.logs
+16.git push heroku master
