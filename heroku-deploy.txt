@@ -1,0 +1,24 @@
+1.First change the port of app.listen() to port = process.env.PORT || 3000.
+2.Second change the package.json where in the script we specify "start" to
+:"node server/server.js" we will execute it through the console using npm start.
+3.Third tell the heroku about the version of node you are using (node -v)
+by adding a new property to the package.json - "engines":{"node":"version"}.
+4.first complete git insructions
+a.git init
+b.git status
+c.git add specific or .
+d.git commit -am/-m 'message'
+e.copied git command from repository
+f.git push /--force
+5.heroku login
+6.heroku keys
+7.heroku keys:add
+8.heroku create
+9.heroku addons:create mongolab:sandbox
+10.heroku config-you will get MONGODB_URI env variable
+then set mongoose.connect(process.env.MONGODB_URI || mongodb://localhost:27017/TodoApp).
+11.git status
+12.git add .
+13.git commit -m 'message'
+14.git push
+15.heroku.logs 
